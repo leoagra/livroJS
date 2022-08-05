@@ -13,7 +13,12 @@ function decrescerNumero() {
     let resposta = "Entre " + numero + " e 1: "
 
     for(let i = numero; i > 0; i-- ) {
-        resposta = resposta + i + ", "
+        if(i == 1){
+            resposta = resposta + i + ". " 
+        } else {
+            resposta = resposta + i + ", "
+        }
+       
     }
     outResposta.textContent = resposta
 }
