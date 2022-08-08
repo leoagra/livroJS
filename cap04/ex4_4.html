@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex4_4</title>
+</head>
+<body>
+    <script>
+        alert("Digite 0 para sair.")
+        //início da ação
+        do {
+            var num = Number(prompt("Numero: "))
+
+            if(num == 0 || isNaN(num)) {
+                var sair = confirm("Confirmar Saída?") //confirma a saída do usuário
+                if (sair) {
+                break // sair da repetição
+            } else {
+                continue // voltar ao inínio do laço
+            }
+        }
+             //se par mostrar o dobro; impar moastrar o triplo
+             if (num % 2 == 0) {
+                alert("O dobro de " + num + " é: " + num * 2)
+             } else {
+                alert("O tríplo de " + num + " é " + num * 3)
+             }
+        } while (true) //enquanto verdade (só sai do laço, pelo brack)
+        alert("Bye, bye...?")
+    
+    </script>
+</body>
+</html>
