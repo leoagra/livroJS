@@ -1,5 +1,5 @@
 function decrescerNumero() {
-    let = inNumero = document.getElementById("inNumero")
+    let inNumero = document.getElementById("inNumero")
     let outResposta = document.getElementById("outResposta")
 
     let numero = inNumero.value
@@ -10,18 +10,16 @@ function decrescerNumero() {
         return
     }
 
-    let resposta = "Entre " + numero + " e 1: "
+    var resposta = "Entre " + numero + " e 1: " //melhor usar o contador com VAR q LET
 
-    for(let i = numero; i > 0; i-- ) {
-        if(i == 1){
-            resposta = resposta + i + ". " 
-        } else {
-            resposta = resposta + i + ", "
+    for(var i = numero; i > 1; i-- ) {
+            resposta = resposta + i + ", " 
         }
-       
+            resposta = resposta + i + "."
+        outResposta.textContent = resposta 
+        
     }
-    outResposta.textContent = resposta
-}
+    
 
 let btMostrar = document.getElementById("btMostrar")
 btMostrar.addEventListener("click", decrescerNumero)
