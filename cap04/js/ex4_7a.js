@@ -14,8 +14,8 @@ function repetirFruta(){
 
     var cont = ""
 
-    for(var i = 1; i <= num; i++){
-       cont = cont + fruta + "*" 
+    for(var i = 2; i <= num; i++){
+        cont = cont + fruta + "*" 
     }
     outFrutas.textContent = cont
 }
